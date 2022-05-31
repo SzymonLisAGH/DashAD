@@ -98,6 +98,7 @@ def CreateWebPage():
     app = dash.Dash(__name__,external_stylesheets=external_stylesheets)
     app.layout = html.Div([
         html.H1("Dashboard Worldometer Data", style={'textAlign': 'center'}),
+        html.P("Created by:     Agnieszka Wellian, Filip Olszowski, Szymon Lis", style={'textAlign': 'center','fontStyle':'italic'}),
         dcc.Interval(
             id = 'graphs-update',
             interval = 1000,
